@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,12 +20,21 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
-font-family:'Space Grotesk',sans-serif;
 background:#090909;
 color:white;
-overflow-x:hidden;
+font-family:'Space Grotesk',sans-serif;
+
+}
+
+section{
+
+padding:120px 30px;
 
 }
 
@@ -42,21 +52,19 @@ align-items:center;
 
 text-align:center;
 
-padding:30px;
-
-animation:fadeUp 1.3s ease;
+animation:fadeUp 1.2s ease;
 
 }
 
 .hero img{
 
-width:170px;
+width:220px;
 
-margin-bottom:40px;
-
-filter:drop-shadow(0 0 20px rgba(255,255,255,.08));
+margin-bottom:35px;
 
 transition:.4s;
+
+filter:drop-shadow(0 0 18px rgba(255,255,255,.08));
 
 }
 
@@ -68,29 +76,29 @@ transform:scale(1.04);
 
 h1{
 
-font-size:5rem;
+font-size:5.5rem;
 
-letter-spacing:14px;
+letter-spacing:16px;
 
-margin-bottom:20px;
+margin-bottom:25px;
 
 font-weight:700;
 
 }
 
-p{
+.hero p{
 
-max-width:650px;
-
-font-size:1.3rem;
-
-line-height:1.9;
+font-size:1.35rem;
 
 color:#bdbdbd;
+
+line-height:1.9;
 
 }
 
 .button{
+
+display:inline-block;
 
 margin-top:50px;
 
@@ -98,13 +106,13 @@ padding:18px 50px;
 
 border:1px solid white;
 
-text-decoration:none;
-
 color:white;
 
-transition:.35s;
+text-decoration:none;
 
 letter-spacing:3px;
+
+transition:.3s;
 
 }
 
@@ -115,6 +123,102 @@ background:white;
 color:black;
 
 transform:translateY(-4px);
+
+}
+
+.about{
+
+background:#111;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:3rem;
+
+letter-spacing:8px;
+
+margin-bottom:40px;
+
+}
+
+.about p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:2;
+
+font-size:1.15rem;
+
+color:#bdbdbd;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+background:#090909;
+
+}
+
+.card{
+
+background:#141414;
+
+padding:45px;
+
+border:1px solid #222;
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:white;
+
+}
+
+.card h3{
+
+font-size:1.6rem;
+
+margin-bottom:20px;
+
+letter-spacing:3px;
+
+}
+
+.card p{
+
+color:#bdbdbd;
+
+line-height:1.8;
+
+}
+
+footer{
+
+padding:60px;
+
+text-align:center;
+
+color:#666;
+
+font-size:.9rem;
+
+border-top:1px solid #222;
 
 }
 
@@ -146,21 +250,20 @@ transform:translateY(0);
 
 <section class="hero">
 
-<img src="Everforge logo.png">
+<img src="Everforge logo.png" alt="EVERFORGE">
 
 <h1>EVERFORGE</h1>
 
 <p>
 
 Engineered for Performance.<br>
-
 Built to Last.
 
 </p>
 
-<a href="#" class="button">
+<a href="mailto:contact@everforgefitness.co.uk" class="button">
 
-COMING SOON
+CONTACT US
 
 </a>
 
@@ -168,16 +271,69 @@ COMING SOON
 
 <section class="about">
 
-    <h2>BUILT WITH PURPOSE</h2>
+<h2>BUILT WITH PURPOSE</h2>
 
-    <p>
-        At EVERFORGE, we believe every accessory should be engineered with intention.
-        We don't chase trends or gimmicks. We create premium fitness equipment
-        designed to perform, built to endure, and crafted without compromise.
-    </p>
+<p>
+
+At EVERFORGE, we believe every accessory should be engineered with intention.
+
+We don't chase trends.
+
+We don't build disposable products.
+
+Every piece is designed to perform, built to endure, and created without compromise.
+
+</p>
 
 </section>
-  
+
+<section class="cards">
+
+<div class="card">
+
+<h3>PRECISION</h3>
+
+<p>
+
+Every detail matters.
+Designed with accuracy and purpose.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>DURABILITY</h3>
+
+<p>
+
+Premium materials chosen to withstand years of daily training.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>PERFORMANCE</h3>
+
+<p>
+
+Built for athletes who appreciate quality as much as results.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 EVERFORGE
+
+</footer>
+
 </body>
 
 </html>
