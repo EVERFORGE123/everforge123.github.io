@@ -135,9 +135,25 @@ linear-gradient(
 
 }
 
+.forge-icon img{
+
+    width:300px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transition:.5s;
+
+    filter:
+        drop-shadow(0 0 20px rgba(255,255,255,.15))
+        drop-shadow(0 0 60px rgba(176,141,87,.25));
+
+}
+
 .forge-icon img:hover{
 
-    transform:scale(1.03);
+    transform:scale(1.05) rotate(2deg);
 
 }
 
