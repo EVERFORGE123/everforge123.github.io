@@ -350,3 +350,42 @@ font-size:2.8rem;
 }
 
 }
+
+.hidden{
+
+opacity:0;
+transform:translateY(80px);
+transition:1s ease;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.loaded .hero{
+
+animation:fadeHero 1.2s ease;
+
+}
+
+@keyframes fadeHero{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
