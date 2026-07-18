@@ -115,23 +115,23 @@ linear-gradient(
 
 }
 
-.forge-icon img{
+.forge-icon{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     width:520px;
+    height:520px;
 
-    max-width:100%;
+    border-radius:50%;
 
-    height:auto;
+    background:
+        radial-gradient(circle,
+        rgba(176,141,87,.08),
+        rgba(176,141,87,0) 70%);
 
-    object-fit:contain;
-
-    opacity:.95;
-
-    filter:
-    drop-shadow(0 0 35px rgba(176,141,87,.45))
-    drop-shadow(0 0 120px rgba(176,141,87,.18));
-
-    transition:.5s;
+    animation:float 6s ease-in-out infinite;
 
 }
 
