@@ -159,6 +159,10 @@ body{
 }
 
 .button{
+    font-weight:600;
+    letter-spacing:.08em;
+    border-radius:4px;
+}
 
     display:inline-block;
 
