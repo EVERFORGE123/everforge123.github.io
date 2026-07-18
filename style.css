@@ -98,6 +98,25 @@ body{
     color:#b08d57;
 }
 
+.nav-links a{
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#b08d57;
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
 /* ---------------- HERO ---------------- */
 
 .hero{
