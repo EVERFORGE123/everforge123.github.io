@@ -103,34 +103,29 @@ body{
 
 }
 
-.forge-icon{
+.forge-icon img{
 
     width:520px;
 
-    height:520px;
+    max-width:100%;
 
-    display:flex;
+    height:auto;
 
-    justify-content:center;
+    object-fit:contain;
 
-    align-items:center;
+    opacity:.95;
 
-    border-radius:50%;
+    filter:
+    drop-shadow(0 0 35px rgba(176,141,87,.45))
+    drop-shadow(0 0 120px rgba(176,141,87,.18));
 
-    background:radial-gradient(circle,
-    rgba(176,141,87,.18),
-    transparent 70%);
-
-    animation:float 6s ease-in-out infinite;
+    transition:.5s;
 
 }
 
-.forge-icon img{
+.forge-icon img:hover{
 
-    width:90%;
-
-    filter:
-    drop-shadow(0 0 40px rgba(176,141,87,.25));
+    transform:scale(1.03);
 
 }
 
