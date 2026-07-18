@@ -1,86 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVERFORGE | Premium Fitness Accessories</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<title>EVERFORGE | Premium Fitness Accessories</title>
 
-        body{
-            background:#0f0f0f;
-            color:white;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .hero{
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            text-align:center;
-            padding:20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        img{
-            width:140px;
-            margin-bottom:30px;
-        }
+<style>
 
-        h1{
-            font-size:3.5rem;
-            letter-spacing:8px;
-            margin-bottom:15px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        p{
-            font-size:1.2rem;
-            color:#cfcfcf;
-            max-width:600px;
-            line-height:1.8;
-        }
+body{
 
-        .button{
-            margin-top:40px;
-            text-decoration:none;
-            color:white;
-            border:1px solid white;
-            padding:15px 35px;
-            transition:.3s;
-        }
+font-family:'Space Grotesk',sans-serif;
+background:#090909;
+color:white;
+overflow-x:hidden;
 
-        .button:hover{
-            background:white;
-            color:#0f0f0f;
-        }
-    </style>
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+animation:fadeUp 1.3s ease;
+
+}
+
+.hero img{
+
+width:170px;
+
+margin-bottom:40px;
+
+filter:drop-shadow(0 0 20px rgba(255,255,255,.08));
+
+transition:.4s;
+
+}
+
+.hero img:hover{
+
+transform:scale(1.04);
+
+}
+
+h1{
+
+font-size:5rem;
+
+letter-spacing:14px;
+
+margin-bottom:20px;
+
+font-weight:700;
+
+}
+
+p{
+
+max-width:650px;
+
+font-size:1.3rem;
+
+line-height:1.9;
+
+color:#bdbdbd;
+
+}
+
+.button{
+
+margin-top:50px;
+
+padding:18px 50px;
+
+border:1px solid white;
+
+text-decoration:none;
+
+color:white;
+
+transition:.35s;
+
+letter-spacing:3px;
+
+}
+
+.button:hover{
+
+background:white;
+
+color:black;
+
+transform:translateY(-4px);
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="hero">
+<section class="hero">
 
-    <img src="Everforge logo.png" alt="EVERFORGE Logo">
+<img src="Everforge logo.png">
 
-    <h1>EVERFORGE</h1>
+<h1>EVERFORGE</h1>
 
-    <p>
-        Precision engineered.<br>
-        Built to perform.
-    </p>
+<p>
 
-    <a class="button" href="mailto:contact@everforgefitness.co.uk">
-        Contact Us
-    </a>
+Engineered for Performance.<br>
 
-</div>
+Built to Last.
+
+</p>
+
+<a href="#" class="button">
+
+COMING SOON
+
+</a>
+
+</section>
 
 </body>
+
 </html>
