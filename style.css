@@ -13,9 +13,10 @@ html{
 }
 
 body{
-
-    background:red !important;
-
+    font-family:'Space Grotesk',sans-serif;
+    background:#090909;
+    color:white;
+    overflow-x:hidden;
 }
 
 /* ---------------- BACKGROUND ---------------- */
