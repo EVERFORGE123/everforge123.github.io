@@ -1,339 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERFORGE</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<title>EVERFORGE | Premium Fitness Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-background:#090909;
-color:white;
-font-family:'Space Grotesk',sans-serif;
-
-}
-
-section{
-
-padding:120px 30px;
-
-}
-
-.hero{
-
-height:100vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-animation:fadeUp 1.2s ease;
-
-}
-
-.hero img{
-
-width:220px;
-
-margin-bottom:35px;
-
-transition:.4s;
-
-filter:drop-shadow(0 0 18px rgba(255,255,255,.08));
-
-}
-
-.hero img:hover{
-
-transform:scale(1.04);
-
-}
-
-h1{
-
-font-size:5.5rem;
-
-letter-spacing:16px;
-
-margin-bottom:25px;
-
-font-weight:700;
-
-}
-
-.hero p{
-
-font-size:1.35rem;
-
-color:#bdbdbd;
-
-line-height:1.9;
-
-}
-
-.button{
-
-display:inline-block;
-
-margin-top:50px;
-
-padding:18px 50px;
-
-border:1px solid white;
-
-color:white;
-
-text-decoration:none;
-
-letter-spacing:3px;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-background:white;
-
-color:black;
-
-transform:translateY(-4px);
-
-}
-
-.about{
-
-background:#111;
-
-text-align:center;
-
-}
-
-.about h2{
-
-font-size:3rem;
-
-letter-spacing:8px;
-
-margin-bottom:40px;
-
-}
-
-.about p{
-
-max-width:850px;
-
-margin:auto;
-
-line-height:2;
-
-font-size:1.15rem;
-
-color:#bdbdbd;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
-
-background:#090909;
-
-}
-
-.card{
-
-background:#141414;
-
-padding:45px;
-
-border:1px solid #222;
-
-transition:.35s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-border-color:white;
-
-}
-
-.card h3{
-
-font-size:1.6rem;
-
-margin-bottom:20px;
-
-letter-spacing:3px;
-
-}
-
-.card p{
-
-color:#bdbdbd;
-
-line-height:1.8;
-
-}
-
-footer{
-
-padding:60px;
-
-text-align:center;
-
-color:#666;
-
-font-size:.9rem;
-
-border-top:1px solid #222;
-
-}
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<section class="hero">
+<div class="background"></div>
 
-<img src="Everforge logo.png" alt="EVERFORGE">
+<header class="hero">
 
-<h1>EVERFORGE</h1>
+    <img src="Everforge logo.png" class="logo" alt="EVERFORGE">
 
-<p>
+    <p class="eyebrow">
+        ENGINEERED FOR PERFORMANCE
+    </p>
 
-Engineered for Performance.<br>
-Built to Last.
+    <h1>EVERFORGE</h1>
 
-</p>
+    <p class="subtitle">
+        Built to Last.
+    </p>
 
-<a href="mailto:contact@everforgefitness.co.uk" class="button">
+    <a href="#about" class="button">
+        DISCOVER
+    </a>
 
-CONTACT US
+</header>
 
-</a>
+
+<section id="about" class="about">
+
+    <h2>BUILT WITH PURPOSE</h2>
+
+    <p>
+
+        EVERFORGE creates premium fitness accessories for people who value
+        quality over gimmicks.
+
+        Every product is engineered to perform, built to endure and designed
+        to become an everyday essential.
+
+    </p>
+
+</section>
+
+
+
+<section class="features">
+
+    <div class="card">
+
+        <h3>PRECISION</h3>
+
+        <p>
+
+            Every detail exists for a reason.
+
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>DURABILITY</h3>
+
+        <p>
+
+            Premium materials.
+            Built to last.
+
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>PERFORMANCE</h3>
+
+        <p>
+
+            Designed for athletes who expect more.
+
+        </p>
+
+    </div>
 
 </section>
 
-<section class="about">
 
-<h2>BUILT WITH PURPOSE</h2>
 
-<p>
+<section class="coming">
 
-At EVERFORGE, we believe every accessory should be engineered with intention.
+    <div class="coming-text">
 
-We don't chase trends.
+        <p class="small">
 
-We don't build disposable products.
+            COMING SOON
 
-Every piece is designed to perform, built to endure, and created without compromise.
+        </p>
 
-</p>
+        <h2>
 
-</section>
+            SOMETHING<br>
+            WORTH<br>
+            THE WAIT.
 
-<section class="cards">
+        </h2>
 
-<div class="card">
+        <p>
 
-<h3>PRECISION</h3>
+            A new standard is being forged.
 
-<p>
+        </p>
 
-Every detail matters.
-Designed with accuracy and purpose.
+    </div>
 
-</p>
 
-</div>
+    <div class="coming-image">
 
-<div class="card">
+        <img src="shaker.png" alt="Coming Soon">
 
-<h3>DURABILITY</h3>
-
-<p>
-
-Premium materials chosen to withstand years of daily training.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>PERFORMANCE</h3>
-
-<p>
-
-Built for athletes who appreciate quality as much as results.
-
-</p>
-
-</div>
+    </div>
 
 </section>
+
+
 
 <footer>
 
-© 2026 EVERFORGE
+    © 2026 EVERFORGE
+
+    <br><br>
+
+    contact@everforgefitness.co.uk
 
 </footer>
 
-</body>
 
+
+<script src="script.js"></script>
+
+</body>
 </html>
