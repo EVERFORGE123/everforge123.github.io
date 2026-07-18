@@ -398,3 +398,38 @@ font-size:5rem;
 }
 
 }
+
+/* TEST */
+.navbar{
+    position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+    width:100% !important;
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    padding:20px 8% !important;
+    background:#111 !important;
+    z-index:9999 !important;
+}
+
+.logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:12px !important;
+}
+
+.logo img{
+    width:36px !important;
+    height:auto !important;
+}
+
+.nav-links{
+    display:flex !important;
+    gap:32px !important;
+}
+
+.nav-links a{
+    color:#fff !important;
+    text-decoration:none !important;
+}
