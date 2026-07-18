@@ -164,13 +164,24 @@ body{
 
 }
 
-.hero h1{
+   .hero h1{
 
     font-family:'Bebas Neue',sans-serif;
 
-    font-size:clamp(5rem,12vw,8rem);
+    font-size:clamp(6rem,10vw,10rem);
 
-    letter-spacing:.08em;
+    line-height:.9;
+
+    letter-spacing:.06em;
+
+    margin:25px 0;
+
+    background:linear-gradient(
+    #ffffff,
+    #cfcfcf);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 
 }
 
