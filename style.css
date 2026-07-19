@@ -119,6 +119,8 @@ body{
 
 /* ---------------- HERO ---------------- */
 
+/* ---------------- HERO ---------------- */
+
 .hero{
     min-height:calc(100vh - 80px);
     display:grid;
@@ -133,29 +135,18 @@ body{
 }
 
 .eyebrow{
-
     color:#b08d57;
-
     letter-spacing:.45em;
-
     font-size:.95rem;
-
     margin-bottom:18px;
-
 }
 
 .hero h1{
-
     font-family:'Bebas Neue',sans-serif;
-
-    font-size:clamp(6rem,10vw,10rem);
-
-    line-height:.9;
-
-    letter-spacing:.05em;
-
-    margin-bottom:20px;
-
+    font-size:clamp(6rem,11vw,9rem);
+    line-height:.88;
+    letter-spacing:.08em;
+    margin-bottom:24px;
 }
 
 .subtitle{
@@ -167,75 +158,72 @@ body{
 }
 
 .button{
+    display:inline-block;
+    padding:18px 42px;
+    border:2px solid #b08d57;
+    border-radius:6px;
+    color:#fff;
+    text-decoration:none;
     font-weight:600;
     letter-spacing:.08em;
-    border-radius:4px;
-
-    display:inline-block;
-
-    text-decoration:none;
-
-    color:white;
-
-    border:1px solid #b08d57;
-
-    padding:18px 40px;
-
-    transition:.35s;
-
+    transition:.3s;
 }
 
 .button:hover{
-
     background:#b08d57;
-
     color:#111;
-
-    box-shadow:0 0 25px rgba(176,141,87,.35);
-
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(176,141,87,.35);
 }
 
 .right{
-
+    position:relative;
     display:flex;
-
     justify-content:center;
-
     align-items:center;
+}
 
+.forge-glow{
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(176,141,87,.28) 0%,
+        rgba(176,141,87,.12) 35%,
+        transparent 70%
+    );
+    filter:blur(35px);
+    animation:pulse 5s ease-in-out infinite;
 }
 
 .icon{
     width:420px;
     max-width:100%;
+    position:relative;
+    z-index:2;
     animation:float 6s ease-in-out infinite;
     filter:
         drop-shadow(0 0 20px rgba(255,255,255,.08))
         drop-shadow(0 0 90px rgba(176,141,87,.40));
 }
 
-@keyframes glow{
-
-0%,100%{
-    filter:
-    drop-shadow(0 0 20px rgba(255,255,255,.08))
-    drop-shadow(0 0 60px rgba(176,141,87,.25));
-}
-
-50%{
-    filter:
-    drop-shadow(0 0 25px rgba(255,255,255,.12))
-    drop-shadow(0 0 90px rgba(176,141,87,.45));
-}
-
+@keyframes pulse{
+    0%,100%{
+        transform:scale(.95);
+        opacity:.7;
+    }
+    50%{
+        transform:scale(1.08);
+        opacity:1;
+    }
 }
 
 @keyframes float{
-
-0%{transform:translateY(0);}
-50%{transform:translateY(-14px);}
-100%{transform:translateY(0);}
-
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-14px);}
+    100%{transform:translateY(0);}
 }
 
 /* ---------------- ABOUT ---------------- */
