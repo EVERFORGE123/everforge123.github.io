@@ -255,7 +255,7 @@ body{
     z-index:1;
     width:520px;
     height:520px;
-    border-radius:50%;
+    border-radius:25%;
     background:radial-gradient(
         circle,
         rgba(176,141,87,.28) 0%,
@@ -267,7 +267,7 @@ body{
 }
 
 .icon{
-    width:540px;
+    width:640px;
     max-width:100%;
     position:relative;
     z-index:2;
