@@ -22,15 +22,38 @@ body{
 /* ---------------- BACKGROUND ---------------- */
 
 .background{
-
-    position:fixed;
-    inset:0;
-    z-index:-10;
+    position: fixed;
+    inset: 0;
+    z-index: -10;
 
     background:
-    radial-gradient(circle at 78% 28%,rgba(176,141,87,.18),transparent 28%),
-    radial-gradient(circle at 15% 90%,rgba(255,255,255,.03),transparent 30%),
-    linear-gradient(135deg,#111,#050505);
+        /* Warm forge glow */
+        radial-gradient(
+            circle at 78% 28%,
+            rgba(176,141,87,.18),
+            transparent 30%
+        ),
+
+        /* Soft white highlight */
+        radial-gradient(
+            circle at 22% 18%,
+            rgba(255,255,255,.045),
+            transparent 42%
+        ),
+
+        /* Lower ambient light */
+        radial-gradient(
+            circle at 55% 95%,
+            rgba(255,255,255,.025),
+            transparent 45%
+        ),
+
+        /* Base */
+        linear-gradient(
+            135deg,
+            #111,
+            #050505
+        );
 
 }
 
