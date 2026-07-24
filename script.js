@@ -67,11 +67,32 @@ window.addEventListener("load",()=>{
 
 });
 
-const menu = document.querySelector(".mobile-menu");
-const button = document.querySelector(".menu-toggle");
+document.addEventListener("DOMContentLoaded", () => {
 
-button.addEventListener("click", () => {
+    const menu = document.querySelector(".mobile-menu");
+    const button = document.querySelector(".menu-toggle");
 
-    menu.classList.toggle("active");
+    button.addEventListener("click", () => {
+
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+            button.textContent = "✕";
+        } else {
+            button.textContent = "☰";
+        }
+
+    });
+
+    document.querySelectorAll(".mobile-menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            menu.classList.remove("active");
+            button.textContent = "☰";
+
+        });
+
+    });
 
 });
