@@ -66,3 +66,12 @@ window.addEventListener("load",()=>{
     document.body.classList.add("loaded");
 
 });
+
+const menu = document.querySelector(".mobile-menu");
+const button = document.querySelector(".menu-toggle");
+
+button.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+
+});
