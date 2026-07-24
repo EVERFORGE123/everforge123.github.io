@@ -268,11 +268,11 @@ body{
 
 .icon{
     width:380px;
-    transform:translateY(-20px);
+    transform:translateY(-18px);
     max-width:100%;
     position:relative;
     z-index:2;
-    animation:float 6s ease-in-out infinite;
+    animation:float 10s ease-in-out infinite;
     filter:
         drop-shadow(0 0 20px rgba(255,255,255,.08))
         drop-shadow(0 0 90px rgba(176,141,87,.40));
@@ -281,7 +281,7 @@ body{
 .panel-text{
     position:absolute;
     left:50%;
-    bottom:30px;
+    bottom:40px;
     transform:translateX(-50%);
 
     font-size:.8rem;
