@@ -71,12 +71,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const menu = document.querySelector(".mobile-menu");
     const button = document.querySelector(".menu-toggle");
+    const overlay = document.querySelector(".menu-overlay");
 
     button.addEventListener("click", () => {
 
     menu.classList.toggle("active");
     button.classList.toggle("active");
+    overlay.classList.toggle("active");
 
+    if (menu.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "";
+    }
+overlay.addEventListener("click", () => {
+
+    menu.classList.remove("active");
+    button.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+
+});
 });
 
     document.querySelectorAll(".mobile-menu a").forEach(link => {
@@ -85,9 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menu.classList.remove("active");
         button.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
 
     });
 
 });
-
 });
