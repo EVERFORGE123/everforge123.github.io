@@ -102,7 +102,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    z-index:100;
+    z-index:2000;
     background:rgba(9,9,9,.45);
     backdrop-filter:blur(12px);
 }
