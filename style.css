@@ -79,6 +79,20 @@ body{
 
 /* ---------------- NAVBAR ---------------- */
 
+.menu-toggle{
+
+    display:none;
+
+    font-size:2rem;
+
+    color:white;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
 .navbar{
     position:fixed;
     top:0;
@@ -471,6 +485,14 @@ footer{
         padding:18px 7%;
     }
 
+    .nav-links{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
     .logo{
         font-size:1.6rem;
         gap:10px;
@@ -478,11 +500,6 @@ footer{
 
     .logo img{
         width:32px;
-    }
-
-    .nav-links{
-        gap:18px;
-        font-size:.95rem;
     }
 
     .hero{
