@@ -455,13 +455,17 @@ body{
 
 .shaker{
 
-    width:320px;
+    width:420px;
 
     max-width:100%;
 
     display:block;
 
     margin:auto;
+
+    border-radius:16px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
 
 }
 
