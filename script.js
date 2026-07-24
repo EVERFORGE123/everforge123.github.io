@@ -74,25 +74,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     button.addEventListener("click", () => {
 
-        menu.classList.toggle("active");
+    menu.classList.toggle("active");
+    button.classList.toggle("active");
 
-        if (menu.classList.contains("active")) {
-            button.textContent = "✕";
-        } else {
-            button.textContent = "☰";
-        }
-
-    });
+});
 
     document.querySelectorAll(".mobile-menu a").forEach(link => {
 
-        link.addEventListener("click", () => {
+    link.addEventListener("click", () => {
 
-            menu.classList.remove("active");
-            button.textContent = "☰";
-
-        });
+        menu.classList.remove("active");
+        button.classList.remove("active");
 
     });
+
+});
 
 });
